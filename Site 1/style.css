@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsterrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monsterrat', sans-serif;
+}
+nav{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('medias/constant-loubier-7lzIyp2Ork4-unsplash.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 50px;
+}
+header h2{
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 50px;
+}
+header h2{
+    margin-top: -20px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.main .content .cards .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+.main .content .cards.right{
+    flex: 0 0 70%;
+}
+
+.main .content .cards .right img{
+    height: 300px;
+    margin-top: 5px;
+}
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: black;
+    color: white;
+    padding: 30px 100px;
+}
+footer h1{
+    font-family: 'Playfair Display', sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contacts{
+    color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left:0px;
+        margin-bottom: 20px;
+    }
+    .main .cards{
+        margin: 10px;
+    }
+    .main .content .cards .right img{
+        height: 200px;
+        width: 100px;
+        margin-top: 0px;
+    }
+    .main .content .cards{
+        display: block;
+    }
+    footer{
+        margin-top: 30px;
+    }
+}
+    
